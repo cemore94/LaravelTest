@@ -62,3 +62,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+/* Cemore94 */
+Para que funcione, debe iniciar php artisan tinker y luego agregar la siguiente instruccion:
+
+$user = new App\Models\User();
+$user->password = Hash::make('Clave123+');
+$user->email = 'admin@admin.com';
+$user->name = 'Admin';
+$user->save();
